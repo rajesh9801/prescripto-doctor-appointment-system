@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+*{
+    font-family: Outfit;
+}
+
+.active hr{
+    @apply block;
+}
+
+::-webkit-scrolbar{
+    @apply hidden;
+}
