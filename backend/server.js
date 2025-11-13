@@ -15,27 +15,29 @@ connectDB();
 
 // ✅ CORS setup for local + production
 const allowedOrigins = [
-  "http://localhost:5173",      // local frontend (Vite default)
-  "http://localhost:5174",      // local admin (if run on another port)
-  "https://prescripto-frontend-henna.vercel.app", // deployed frontend
-  "https://prescripto-admin-plum.vercel.app"       // deployed admin
+  "http://localhost:5173",
+  "http://localhost:5174",
+  "https://prescripto-frontend-henna.vercel.app",
+  "https://prescripto-admin-plum.vercel.app"
 ];
 
 app.use(
   cors({
     origin: function (origin, callback) {
-      // allow requests with no origin (like Postman)
-      if (!origin) return callback(null, true);
+      if (!origin) return callback(null, true); // allow Postman / server-to-server
+
       if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
+        callback(null, true);
       } else {
-        return callback(new Error("Not allowed by CORS"));
+        console.log("🚫 CORS blocked:", origin);
+        callback(null, false);  // IMPORTANT: return false, DO NOT throw an error
       }
     },
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })
 );
+
 
 // Middleware
 app.use(express.json());
