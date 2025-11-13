@@ -197,9 +197,8 @@ You can add:
 ![Homepage](image.png)
 ![Booking page](image-1.png)
 ![Payment screen](image-2.png)
-- Admin dashboard
-- Doctor panel
-
+![Admin dashboard](image-3.png)
+![Doctor panel](image-4.png)
 ---
 
 ## 🎯 Future Enhancements
