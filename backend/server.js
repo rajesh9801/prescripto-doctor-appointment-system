@@ -18,7 +18,9 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "https://prescripto-frontend-henna.vercel.app",
-  "https://prescripto-admin-plum.vercel.app"
+  "https://prescripto-admin-plum.vercel.app",
+  "https://prescripto-admin-9vbqwxf9x-rajesh-kumars-projects-d030784c.vercel.app",
+  "https://prescripto-frontend-3s56550b9-rajesh-kumars-projects-d030784c.vercel.app"
 ];
 
 app.use(
