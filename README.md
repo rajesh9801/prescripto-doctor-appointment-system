@@ -212,7 +212,10 @@ You can add:
 ---
 
 ## 👨‍💻 Developer
-Rajesh Kumar – MERN Stack Developer
+**Rajesh Kumar**
+- MERN Stack Developer  
+- LinkedIn: [https://www.linkedin.com/in/rajesh-kumar-791679297]
+
 
 If you found this project useful, please ⭐ the repository!
 
